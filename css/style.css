@@ -1,0 +1,71 @@
+ * {
+     border: 0;
+     padding: 0;
+     margin: 0;
+     font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+ }
+
+body {
+    background-color: lightgray;
+    background-image: url(/images/controller.svg);
+    background-attachment: fixed;
+    background-size: 100px;
+}
+
+nav ul {
+    list-style: none;
+    background-color: darkslateblue;
+    text-align: left;
+
+    
+}
+
+nav li {
+    font-size: 1.2em;
+    line-height: 2em;
+    height: 2em;
+    display: inline-block;
+    font-weight: bold;
+    color: white;
+    padding: 1em;
+    text-transform: uppercase;
+
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav li:hover{
+    background-color: teal;
+}
+
+nav li:active{
+    background-color: thistle;
+}
+
+
+
+
+p, h1, h2, h3{
+    padding: 1rem;
+    text-align: center;
+}
+
+footer{
+    background-color: darkslateblue;
+    color: white;
+    position: sticky;
+    width: 100%;
+    bottom:0;
+}
+
+.gen1, .gen3, .gen5, .gen7, .gen9{
+    background-color: rgba(245,222,179, 0.5);
+    border-top: 1px solid black;
+}
+.gen2, .gen4, .gen6, .gen8, .gen0{
+    background-color:rgba(255,218,185, 0.5);
+    border-top: 1px solid black;
+}
