@@ -9,47 +9,98 @@ body {
     background-color: lightgray;
     background-image: url(/images/controller.svg);
     background-attachment: fixed;
-    background-size: 100px;
+    background-size: 4em;
+    margin: 0 2% 0 2%;
 }
+
+
+header {
+    background-color: darkslateblue;
+    box-shadow: 0 10px 6px -6px #777;   
+    border-style: solid;
+    border-width: 0 1px 1px 1px;
+    border-color: white;
+    border-radius: 0 0 10px 10px;
+
+}
+
+header > p {
+    color: white;
+    float: left;
+    line-height: 2em;
+    font-weight: bold;
+}
+
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
 
 nav ul {
     list-style: none;
-    background-color: darkslateblue;
-    text-align: left;
-
-    
+    float: right;
 }
 
 nav li {
-    font-size: 1.2em;
-    line-height: 2em;
-    height: 2em;
-    display: inline-block;
+    display: inline-flex;
+    margin: 0 -2px 0 -2px;
     font-weight: bold;
     color: white;
-    padding: 1em;
     text-transform: uppercase;
+    line-height: 4em;
 
 }
 
 nav a {
     color: white;
     text-decoration: none;
+    display: block;
+    width: 100%;
+    padding: 0 1em 0 1em;
 }
 
 nav li:hover{
     background-color: teal;
 }
 
-nav li:active{
-    background-color: thistle;
+#corner:hover{
+    border-radius: 0 0 10px 0;
 }
 
 
+nav a:focus {
+    background-color: teal;
+}
 
+#corner > a:focus{
+    border-radius: 0 0 10px 0;
+}
 
-p, h1, h2, h3{
+nav a:active{
+    background-color: thistle;
+}
+
+.gen1 p {
+    display: none;
+} 
+
+.click {
+    display: none;
+}
+.click:checked ~ p{
+    display: block;
+
+} 
+
+p, h2{
     padding: 1rem;
+    text-align: center;
+}
+
+h3 {
+    padding: 5%;
     text-align: center;
 }
 
@@ -59,10 +110,11 @@ footer{
     position: sticky;
     width: 100%;
     bottom:0;
+    margin: 0;
 }
 
 .gen1, .gen3, .gen5, .gen7, .gen9{
-    background-color: rgba(245,222,179, 0.5);
+    background-color: rgba(122, 192, 201, 0.5);
     border-top: 1px solid black;
 }
 .gen2, .gen4, .gen6, .gen8, .gen0{
