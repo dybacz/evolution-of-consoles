@@ -211,8 +211,24 @@ label > * {
 label > p {
     border-bottom: 1px solid black;
 }
-article > * {
-    padding: 10px;
+
+.card {
+    background-color: white;
+}
+.card img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15em;
+
+}
+.card p {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    border: 1px solid black;
 }
 
-
+.card a {
+    text-decoration: none;
+}
