@@ -41,8 +41,8 @@ header > p {
     font-weight: bold;
     padding-left: 1em;
 }
-
-header::after {
+/* Hot fix for floating elements */
+header::after, .panel::after, .panel-top::after {
     content: '';
     display: table;
     clear: both;
@@ -152,6 +152,8 @@ nav a:active{
 .content {
     grid-row-start: 2;
     grid-row-end: 3;
+    width: 100%;
+    height: 100%;
 }
 
 footer{
@@ -200,7 +202,7 @@ footer{
     /*background-color:rgba(255,218,185, 1.0);*/
 }
 
-article {
+article > p{
     background-color: lightgrey;
     border-bottom: 1px solid black;
 }
@@ -232,3 +234,83 @@ label > p {
 .card a {
     text-decoration: none;
 }
+
+.panel {
+    height: auto;
+    margin-top: 5%;
+    background-color: rgb(248, 248, 248);
+}
+.panel-top {
+    background-color: coral;
+}
+
+.panel h1 {
+    text-transform: uppercase;
+    padding: 0.5em;
+}
+
+.panel-info > p {
+    background-color: cornflowerblue;
+    padding: 0.5em;
+}
+
+.panel > figure {
+    float: left;
+    width: auto;
+    width: 46%;
+    padding: 0 0 0 0;
+    margin: 2% 2% 0 2%;
+}
+
+.panel > figure > img {
+    background-color: white;
+    border: 1px solid black;
+    width: 100%;
+}
+.panel > figure > figcaption {
+    text-align: center;
+}
+
+.panel-info  {
+    float: left;
+}
+
+.panel-spec {
+    float: left;
+    width: 46%;
+    height: auto;
+    margin: 2% 2% 0 2%;
+}
+
+.panel-spec ul {
+    list-style: none;
+    line-height: 1.5em;
+    font-size: 1em;
+}
+
+.panel-spec ul p{
+    display: inline-block;
+    font-weight: bold;
+}
+
+.panel-spec ul a {
+    text-decoration: none;
+    
+}
+
+.table-spec table, .table-spec table td, .table-spec table th {
+    border: 1px solid black;
+  }
+
+.table-spec {
+    float:left;
+    width: 46%;
+    margin: 2% 2% 0 2%;
+    
+  }
+
+  .table-spec table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
