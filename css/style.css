@@ -402,6 +402,8 @@ footer{
 
 
 1. ALTERNATING COLOR
+
+
 .timeline > div:nth-child(2n+1){
     background-color: white;
     background-color: rgba(122, 192, 201, 1.0); - transparent background
@@ -409,4 +411,6 @@ footer{
 }
 .timeline > div:nth-child(2n){
     background-color: grey;
-    background-color:rgba(255,218,185, 1.0); -transparent background*/
+    background-color:rgba(255,218,185, 1.0); -transparent background
+    
+*/
