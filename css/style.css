@@ -35,7 +35,7 @@ body {
 }
 
     /** HOTFIX FOR FLOATING DIVS **/
-header::after, .panel::after, .panel-top::after {
+header::after, .panel::after, .panel-top::after, .box section::after{
     content: '';
     display: table;
     clear: both;
@@ -155,7 +155,7 @@ nav a:focus ~ .dropdown-content {
 .panel {
     overflow: hidden;
     border-radius: 3px;
-    margin: 2.5% 0 2.5% 0;
+    margin: 2.5% 2.5% 2.5% 2.5%;
     padding: 2.5% 0 2.5% 0;
     background-color: rgb(248, 248, 248);
     border: solid 1px rgb(211, 211, 211);
@@ -243,30 +243,50 @@ article > p{
 label > p {
     border-bottom: 1px solid black;
 }
-
 .card {
+    float:left;
+    font-size: 1vw;
+    width: 25%;
     background-color: white;
+    margin-top: 2%;
 }
+
+.img-wrap {
+    width: 12vw;
+    height: 12vw;
+    margin: 1vh 1vw 0 1vw;
+    vertical-align: middle;
+    display: table-cell;
+}
+
 .card img {
-    display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 15em;
-
+    width: 100%;
 }
-.card p {
+
+.card figure {
+    width: 75%;
     text-align: center;
-    font-weight: bold;
-    font-size: 1.5em;
-    border: 1px solid black;
+    background-color: white;
+    margin: 0 auto;
+    border: 1px solid #c4c4c4;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-.card a {
+.card figure a {
+    color: black;
     text-decoration: none;
 }
 
+.box section {
+    padding: 0 2% 2% 2%;
+    background-color: white;
+}
+
 .box {
-    margin: 0 1em 0 1em;
+    margin: 0 3vw 0 3vw;
     border-radius: 1em;
 }
 .header-color {
@@ -292,12 +312,10 @@ label > p {
     padding: 2vh 0 2vh 0;;
 }
 
-.box div {
-    margin-top: 0;
-}
+
 
 .atari, .commodore, .microsoft, .nintendo, .sega, .sony, .other {
-    border: 1px solid #00000034;
+    border: 1px solid #00000025;
     border-radius: 1em;
     overflow:hidden;
 }
@@ -353,17 +371,17 @@ label > p {
     display: none;
 }
 
-.atari article, .commodore article, .microsoft article, .nintendo article, .sega article,
-.sony article, .other article {
+.atari section, .commodore section, .microsoft section, .nintendo section, .sega section,
+.sony section, .other section {
     display: none;
 } 
 #atari:focus ~ article {
     display: block;
 }
 
-.at-click:checked ~ article, .com-click:checked ~ article, .ms-click:checked ~ article,
-.nin-click:checked ~ article, .sga-click:checked ~ article, .sny-click:checked ~ article,
-.otr-click:checked ~ article {
+.at-click:checked ~ section, .com-click:checked ~ section, .ms-click:checked ~ section,
+.nin-click:checked ~ section, .sga-click:checked ~ section, .sny-click:checked ~ section,
+.otr-click:checked ~ section {
     display: block;
 } 
 
@@ -393,9 +411,32 @@ footer{
 /********** 5.  MEDIA QUERY MOBILE LAYOUT *********/
 
 @media only screen and (max-width: 600px) {
-    .atari label img, .commodore label img , .microsoft label img , .nintendo label img,
+
+.atari label img, .commodore label img , .microsoft label img , .nintendo label img,
 .sega label img , .sony label img {
-    margin: auto 
+    margin: auto }
+
+.atari, .commodore, .microsoft, .nintendo, .sega, .sony, .other {
+        border-radius: 0.75em;
+    }
+
+.case-bottom {
+        text-align: center;
+        font-size: 0.75em;
+    }
+
+.tab-header {
+        height: 2.75vh;
+    }
+
+.card figure {
+        font-size: 7pt;
+}
+
+.card {
+    width: 50%;
+}
+
 }
 
 /********** 6.UNUSED CODE **********
