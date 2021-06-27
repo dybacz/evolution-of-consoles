@@ -1,10 +1,11 @@
-    /********** MENU **********\
+    /***************** MENU *****************\
             1.INITIATE
             2.HEADER & NAV
             3.BODY
             4.FOOTER
-            5.UNUSED CODE
-    \**************************/
+            5.MEDIA QUERY/MOBILE LAYOUT
+            6.UNUSED CODE
+    \****************************************/
 
 /********** 1.INITIATE **********/
 * {
@@ -268,10 +269,6 @@ label > p {
     margin: 0 1em 0 1em;
     border-radius: 1em;
 }
-.tab-header {
-    height: 7vh;
-    padding: 2vh 0 2vh 8vw;
-}
 .header-color {
     background-image: linear-gradient(to bottom, rgba(255,255,255,0.3) 0%,rgba(230,230,230,0) 8%,rgba(26,26,26,0) 90%, rgba(0,0,0,0.6) 100%);
 }
@@ -284,7 +281,15 @@ label > p {
 .sega label img , .sony label img {
     max-width: 100%;
     max-height: 100%;
-    display: block;
+    display: inline-block;
+}
+
+
+
+.tab-header {
+    height: 4vh;
+    color: white;
+    padding: 2vh 0 2vh 0;;
 }
 
 .box div {
@@ -320,7 +325,28 @@ label > p {
     background-color: black;
     color: white;;
 }
+.case-top, .case-center, .case-bottom {
+    height: inherit;
+    float: left;
+}
+.case-top {
+    width: 15%;
+}
 
+.case-center {
+    width: 65%;
+}
+
+.case-bottom {
+    width: 20%;
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: -1%;
+}
+
+.dark {
+    color: black;
+}
     /** MECHANISM FOR CASCADING DROPDOWN CONSOLE MENU **/
 
 .at-click, .com-click, .ms-click, .nin-click, .sga-click, .sny-click, .otr-click {
@@ -331,6 +357,9 @@ label > p {
 .sony article, .other article {
     display: none;
 } 
+#atari:focus ~ article {
+    display: block;
+}
 
 .at-click:checked ~ article, .com-click:checked ~ article, .ms-click:checked ~ article,
 .nin-click:checked ~ article, .sga-click:checked ~ article, .sny-click:checked ~ article,
@@ -360,7 +389,16 @@ footer{
     padding: 1em;
 }
 
-/********** 5.UNUSED CODE **********
+
+/********** 5.  MEDIA QUERY MOBILE LAYOUT *********/
+
+@media only screen and (max-width: 600px) {
+    .atari label img, .commodore label img , .microsoft label img , .nintendo label img,
+.sega label img , .sony label img {
+    margin: auto 
+}
+
+/********** 6.UNUSED CODE **********
 
 
 1. ALTERNATING COLOR
@@ -371,7 +409,4 @@ footer{
 }
 .timeline > div:nth-child(2n){
     background-color: grey;
-    background-color:rgba(255,218,185, 1.0); -transparent background
-
-}
-*/
+    background-color:rgba(255,218,185, 1.0); -transparent background*/
