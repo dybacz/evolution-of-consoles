@@ -153,7 +153,7 @@ nav a:focus ~ .dropdown-content {
 }
 .panel {
     overflow: hidden;
-    border-radius: 1em;
+    border-radius: 3px;
     margin: 2.5% 0 2.5% 0;
     padding: 2.5% 0 2.5% 0;
     background-color: rgb(248, 248, 248);
@@ -239,10 +239,6 @@ article > p{
     border-bottom: 1px solid black;
 }
 
-label > * {
-    padding: 10px;
-    text-align: center;
-}
 label > p {
     border-bottom: 1px solid black;
 }
@@ -266,6 +262,63 @@ label > p {
 
 .card a {
     text-decoration: none;
+}
+
+.box {
+    margin: 0 1em 0 1em;
+    border-radius: 1em;
+}
+.tab-header {
+    height: 7vh;
+    padding: 2vh 0 2vh 8vw;
+}
+.header-color {
+    background-image: linear-gradient(to bottom, rgba(255,255,255,0.3) 0%,rgba(230,230,230,0) 8%,rgba(26,26,26,0) 90%, rgba(0,0,0,0.6) 100%);
+}
+
+.header-white {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.3) 0%,rgba(230,230,230,0) 8%,rgba(26,26,26,0) 92%,rgba(0,0,0,0.6) 100%);
+}
+
+.atari label img, .commodore label img , .microsoft label img , .nintendo label img,
+.sega label img , .sony label img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+}
+
+.box div {
+    margin-top: 0;
+}
+
+.atari, .commodore, .microsoft, .nintendo, .sega, .sony, .other {
+    border: 1px solid #00000034;
+    border-radius: 1em;
+    overflow:hidden;
+}
+
+.atari {
+    background-color: #FA000F;
+}
+
+.commodore {
+    background-image: white;
+}
+.microsoft {
+    background-color: rgba(0, 0, 0, 0.93);
+}
+.nintendo {
+    background-color: white;
+}
+.sega {
+    background-color: #0060A8;
+}
+.sony {
+    background-color: black;
+}
+.other {
+    background-color: black;
+    color: white;;
 }
 
     /** MECHANISM FOR CASCADING DROPDOWN CONSOLE MENU **/
