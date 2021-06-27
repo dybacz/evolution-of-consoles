@@ -1,34 +1,52 @@
-* {
-     border: 0;
-     padding: 0;
-     margin: 0;
-     font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
- }
+    /********** MENU **********\
+            1.INITIATE
+            2.HEADER & NAV
+            3.BODY
+            4.FOOTER
+            5.UNUSED CODE
+    \**************************/
 
-:root {
-    --main-color:#3B3B3B;
-}
+/********** 1.INITIATE **********/
+* {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+   }
+
 html{
-    height: 100%;
+   height: 100%;
 }
 
 body {
-    background-color: white;
-    background-image: url(../images/controller.svg);
-    background-attachment: fixed;
-    margin: 0 5% 0 5%;
-    min-height: 100%;
-    display: grid;
-    grid-template-rows: auto 1fr auto ;
+   background-color: white;
+   background-image: url(../images/controller.svg);
+   background-attachment: fixed;
+   margin: 0 10% 0 10%;
+   min-height: 100%;
+   display: grid;
+   grid-template-rows: auto 1fr auto ;
 }
 
+    /** VARIABLES **/
+:root {
+    --main-color:#3B3B3B;
+}
 
+    /** HOTFIX FOR FLOATING DIVS **/
+header::after, .panel::after, .panel-top::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/********** 2.HEADER & NAV **********/
 header {
     background-color: var(--main-color);
-    box-shadow: 0 10px 6px -6px #777;   
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 8px 0 rgba(0, 0, 0, 0.2);   
     border-style: solid;
     border-width: 0 1px 1px 1px;
-    border-color: white;
+    border-color: #333333;
     grid-row-start: 1;
     grid-row-end: 2;
 
@@ -41,13 +59,6 @@ header > p {
     font-weight: bold;
     padding-left: 1em;
 }
-/* Hot fix for floating elements */
-header::after, .panel::after, .panel-top::after {
-    content: '';
-    display: table;
-    clear: both;
-}
-
 
 nav ul {
     list-style: none;
@@ -78,20 +89,23 @@ nav li:hover{
 nav a:focus {
     background-color: teal;
 }
-nav a:focus ~ .dropdown-content {
-    display: block;
-}
 
 nav a:active{
     background-color: thistle;
+}
+
+    /** DROPDOWN FUNCTION ***/
+
+nav a:focus ~ .dropdown-content {
+    display: block;
 }
 
 .dropdown {
     float: left;
     overflow: hidden;
   }
-  
-  .dropdown .dropbtn {
+
+.dropdown .dropbtn {
     font-size: 16px;  
     border: none;
     outline: none;
@@ -100,7 +114,8 @@ nav a:active{
     font-family: inherit;
     margin: 0;
   }
-  .dropdown-content {
+
+.dropdown-content {
     display: none;
     position: absolute;
     right: 5%;
@@ -110,8 +125,8 @@ nav a:active{
     z-index: 1;
     overflow: hidden;
   }
-  
-  .dropdown-content a {
+
+.dropdown-content a {
     float: none;
     color: black;
     text-decoration: none;
@@ -119,130 +134,32 @@ nav a:active{
     text-align: left;
     padding: 0 -16px 0 1em;
   }
-  
-  .dropdown-content a:hover {
+
+.dropdown-content a:hover {
     background-color: #ddd;
   
   }
-  
-  .dropdown:hover .dropdown-content {
+
+.dropdown:hover .dropdown-content {
     display: block;
   }
 
-/** Dropdown content on click  in body**/
-
-.g1click, .g2click, .g3click, .g4click, .g5click, .g6click, .g7click, .g8click,
-.g9click, .g0click
- {
-    display: none;
-}
-
-.gen1 article, .gen2 article, .gen3 article, .gen4 article, .gen5 article,
-.gen6 article, .gen7 article, .gen8 article, .gen9 article, .gen0 article {
-    display: none;
-} 
-
-.g1click:checked ~ article, .g2click:checked ~ article, .g3click:checked ~ article,
-.g4click:checked ~ article, .g5click:checked ~ article, .g6click:checked ~ article,
-.g7click:checked ~ article, .g8click:checked ~ article, .g9click:checked ~ article,
-.g0click:checked ~ article {
-    display: block;
-} 
-
+/********** 3.BODY **********/
 .content {
     grid-row-start: 2;
     grid-row-end: 3;
     width: 100%;
     height: 100%;
 }
-
-footer{
-    background-color: var(--main-color);
-    color: white;
-    /*position:fixed;
-    bottom:0;
-    left: 0;
-    right: 0;
-    margin: inherit;
-    
-    originally used for footer to be constantly at bottom.
-    Switched to grid for now.
-    */ 
-    display: inline-flex;
-    grid-row-start: 3;
-    grid-row-end: 4;
-}
-
-
-.ftleft {
-    width: 100%;
-    text-align: left;
-    padding: 1em;
-}
-
-.ftright {
-    width: 100%;
-    text-align: right;
-    padding: 1em;
-}
-
-.timeline {
+.panel {
     overflow: hidden;
     border-radius: 1em;
-    margin: 2.5% 1% 2.5% 1%;
-    padding: 2.5% 1% 2.5% 1%;
+    margin: 2.5% 0 2.5% 0;
+    padding: 2.5% 0 2.5% 0;
     background-color: rgb(248, 248, 248);
     border: solid 1px rgb(211, 211, 211);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     grid-row-end: 3;
-}
-
-.timeline > div:nth-child(2n+1){
-    background-color: white;
-    /*background-color: rgba(122, 192, 201, 1.0);*/
-}
-.timeline > div:nth-child(2n){
-    background-color: grey;
-    /*background-color:rgba(255,218,185, 1.0);*/
-}
-
-article > p{
-    background-color: lightgrey;
-    border-bottom: 1px solid black;
-}
-label > * {
-    padding: 10px;
-    text-align: center;
-}
-label > p {
-    border-bottom: 1px solid black;
-}
-
-.card {
-    background-color: white;
-}
-.card img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 15em;
-
-}
-.card p {
-    text-align: center;
-    font-weight: bold;
-    font-size: 1.5em;
-    border: 1px solid black;
-}
-
-.card a {
-    text-decoration: none;
-}
-
-.panel {
-    height: auto;
-    margin-top: 5%;
-    background-color: rgb(248, 248, 248);
 }
 .panel-top {
     background-color: coral;
@@ -301,20 +218,107 @@ label > p {
     text-decoration: none;
     
 }
+    /* Table */
+.table-spec {
+    float:left;
+    width: 46%;
+    margin: 2% 2% 0 2%;
+  }
+
+.table-spec table {
+    width: 100%;
+    border-collapse: collapse;
+  }
 
 .table-spec table, .table-spec table td, .table-spec table th {
     border: 1px solid black;
   }
 
-.table-spec {
-    float:left;
-    width: 46%;
-    margin: 2% 2% 0 2%;
-    
-  }
+article > p{
+    background-color: lightgrey;
+    border-bottom: 1px solid black;
+}
 
-  .table-spec table {
+label > * {
+    padding: 10px;
+    text-align: center;
+}
+label > p {
+    border-bottom: 1px solid black;
+}
+
+.card {
+    background-color: white;
+}
+.card img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15em;
+
+}
+.card p {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    border: 1px solid black;
+}
+
+.card a {
+    text-decoration: none;
+}
+
+    /** MECHANISM FOR CASCADING DROPDOWN CONSOLE MENU **/
+
+.at-click, .com-click, .ms-click, .nin-click, .sga-click, .sny-click, .otr-click {
+    display: none;
+}
+
+.atari article, .commodore article, .microsoft article, .nintendo article, .sega article,
+.sony article, .other article {
+    display: none;
+} 
+
+.at-click:checked ~ article, .com-click:checked ~ article, .ms-click:checked ~ article,
+.nin-click:checked ~ article, .sga-click:checked ~ article, .sny-click:checked ~ article,
+.otr-click:checked ~ article {
+    display: block;
+} 
+
+/********** 4.FOOTER **********/
+
+footer{
+    background-color: var(--main-color);
+    color: white;
+    display: inline-flex;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.ftleft {
     width: 100%;
-    border-collapse: collapse;
-  }
+    text-align: left;
+    padding: 1em;
+}
 
+.ftright {
+    width: 100%;
+    text-align: right;
+    padding: 1em;
+}
+
+/********** 5.UNUSED CODE **********
+
+
+1. ALTERNATING COLOR
+.timeline > div:nth-child(2n+1){
+    background-color: white;
+    background-color: rgba(122, 192, 201, 1.0); - transparent background
+
+}
+.timeline > div:nth-child(2n){
+    background-color: grey;
+    background-color:rgba(255,218,185, 1.0); -transparent background
+
+}
+*/
