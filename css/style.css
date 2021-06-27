@@ -319,7 +319,7 @@ label > p {
     padding: 2vh 0 2vh 0;;
     border-left: 3px solid #00000075;
     border-right: 2px solid #00000075;
-    border-radius: 4px;
+    border-radius: 0px;
 }
 
 .border-fix {
