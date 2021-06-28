@@ -443,7 +443,7 @@ footer{
 }
 
 
-/********** 5.  MEDIA QUERY MOBILE LAYOUT *********
+/********** 5.  MEDIA QUERY MOBILE LAYOUT *********/
 
 @media only screen and (max-width: 600px) {
 
@@ -451,6 +451,10 @@ footer{
 .sega label img , .sony label img {
     margin: auto }
 
+    .card {
+        width: 50%;
+    }
+/*
 .atari, .commodore, .microsoft, .nintendo, .sega, .sony, .other {
         border-radius: 0.75em;
     }
@@ -468,14 +472,10 @@ footer{
         font-size: 7pt;
 }
 
-.card {
-    width: 50%;
+
+
 }
-
-}*/
-
-/********** 6.UNUSED CODE **********
-
+********* 6.UNUSED CODE ********** 
 
 1. ALTERNATING COLOR
 
@@ -487,6 +487,5 @@ footer{
 }
 .timeline > div:nth-child(2n){
     background-color: grey;
-    background-color:rgba(255,218,185, 1.0); -transparent background
-    
+    background-color:rgba(255,218,185, 1.0); -transparent background;
 */
