@@ -451,6 +451,13 @@ footer{
 .sega label img , .sony label img {
     margin: auto }
 
+.box {
+    margin: 6vh 2vw 0 2vw;
+}
+
+.atari-color, .commodore-color, .microsoft-color, .nintendo-color, .sega-color, .sony-color, .other-color {
+    padding: 1vh 0 1vh 0;
+}
     .card {
         width: 50%;
         font-size: 3vw;
@@ -467,7 +474,14 @@ footer{
     height: 16vw;
     }
     .card figure {
-        height: 12vh; 
+        height: 11vh; 
+    }
+
+    .tab-header {
+        height: 3vh;
+    }
+    .border-fix {
+        border-radius: 1vh;
     }
 /*
 .atari, .commodore, .microsoft, .nintendo, .sega, .sony, .other {
