@@ -477,12 +477,14 @@ footer{
         height: 11vh; 
     }
 
-    .tab-header {
-        height: 3vh;
-    }
     .border-fix {
         border-radius: 1vh;
     }
+
+    .tab-header {
+        height: 3vh;
+        border-left: 2px solid #00000075;
+        border-right: 1px solid #00000075;
 /*
 .atari, .commodore, .microsoft, .nintendo, .sega, .sony, .other {
         border-radius: 0.75em;
