@@ -453,6 +453,21 @@ footer{
 
     .card {
         width: 50%;
+        font-size: 3vw;
+    }
+    
+    .card figcaption {
+        line-height: 1;
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .img-wrap {
+    width: 20vw;
+    height: 16vw;
+    }
+    .card figure {
+        height: 12vh; 
     }
 /*
 .atari, .commodore, .microsoft, .nintendo, .sega, .sony, .other {
