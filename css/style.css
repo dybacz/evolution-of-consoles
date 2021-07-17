@@ -439,7 +439,7 @@ label > p {
 }
 
 .container {
-  padding: 2% 2% 2% 2.5%;
+  padding: 21px 21px 21px 21px;
   position: relative;
   background: inherit;
   width: 50%;
@@ -454,6 +454,7 @@ label > p {
 .container.right {
   left: 50%;
   box-sizing: border-box;
+  padding: 21px 21px 21px 21px;
 }
 
 .container.top {
@@ -495,7 +496,7 @@ label > p {
   position: absolute;
   width: 16px;
   height: 16px;
-  top: calc(50% - 8px);
+  top: 68px;
   right: -8px;
   background: #ffffff;
   border: 2px solid #c70202f5;
@@ -514,7 +515,7 @@ label > p {
   position: absolute;
   width: 50px;
   height: 2px;
-  top: calc(50% - 1px);
+  top: 74px;
   right: 8px;
   background: #c70202f5;
   z-index: 1;
@@ -556,7 +557,7 @@ label > p {
   display: inline-block;
   width: 40px;
   height: 40px;
-  top: calc(50% - 20px);
+  top: 55px;
   background: #c70202f5;
   border: 2px solid #c70202f5;
   border-radius: 9px;
@@ -571,12 +572,12 @@ label > p {
 }
 
 .container.left .icon {
-  right: 50px;
+  right: 35px;
   box-sizing: border-box;
 }
 
 .container.right .icon {
-  left: 50px;
+  left: 35px;
   box-sizing: border-box;
 }
 #light-bulb {
@@ -616,7 +617,7 @@ label > p {
 }
 
 .container .content {
-  padding: 5% 11% 5% 5%;
+  padding: 24px 65px 23px 23px;
   background: #ffffff;
   position: relative;
   border: 1px solid #00000013;
@@ -624,7 +625,7 @@ label > p {
 }
 
 .container.right .content {
-  padding: 30px 30px 30px 90px;
+  padding: 24px 23px 23px 65px;
   box-sizing: border-box;
 }
 
@@ -704,7 +705,8 @@ label > p {
 
 #et-box {
   width:30%;
-  max-width:267px;
+  max-width: 180px;
+  margin: 0 50px 10px 30px;
 }
 
 
