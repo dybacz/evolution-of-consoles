@@ -469,7 +469,7 @@ label > p {
   }
 .container.top .icon {
     left: calc(50% - 25px);
-    top: 60%;
+    top: 75%;
     width: 50px;
     height: 50px;
     line-height: 25px;
@@ -477,7 +477,7 @@ label > p {
 
 .container.top .year {
     left: calc(50% - 39px);
-    top: 45%;
+    top: 65%;
   }
 
 .container.top::after{
@@ -486,7 +486,7 @@ label > p {
 
   .container.top::before{
     left: calc(50% - 25px);
-    top: 80%;
+    top: 85%;
     transform: rotate(90deg);
   }
 
@@ -532,7 +532,6 @@ label > p {
   top: calc(50% - 24px);
   text-align: center;
   font-size: 2em;
-  font-weight: bold;
   color: #006E51;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -583,6 +582,7 @@ label > p {
 #light-bulb {
   background-image: url(../images/icons/light-bulb.svg)
 }
+
 #invader {
   background-image: url(../images/icons/invader.svg)
 }
@@ -591,12 +591,20 @@ label > p {
   background-image: url(../images/icons/novoselmushroom.svg)
 }
 
+#joystick {
+  background-image: url(../images/icons/joystick.svg);
+}
+
 #hedgehog {
   background-image: url(../images/icons/sonic.svg)
 }
 
 #cd-rom {
   background-image: url(../images/icons/game-cd.svg)
+}
+
+#multiplayer {
+  background-image: url(../images/icons/online-game.svg);
 }
 
 .container .content {
@@ -627,6 +635,21 @@ label > p {
   color: #000000;
   box-sizing: border-box;
 }
+
+#brown-box {
+  width: 240px;
+  border: 1px solid #00000015;
+  text-align: center;
+  float: right;
+}
+
+#brown-box img {
+  width: 100%;
+  padding: 5%;
+  box-sizing: border-box;
+}
+
+
 
 @media (max-width: 767.98px) {
   .timeline::after {
