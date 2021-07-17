@@ -458,26 +458,26 @@ label > p {
 
 .container.top {
     box-sizing: border-box;
-    padding: 0 15% 5% 15%;
+    padding: 0 2.5% 1% 2.5%;
     width: 100%;
     z-index: 2;
   }
 
 .container.top .content {
-    padding: 30px 30px 160px 30px;
+    padding: 20px 30px 150px 30px;
     box-sizing: border-box;
   }
 .container.top .icon {
-    left: calc(50% - 25px);
-    top: 75%;
-    width: 50px;
-    height: 50px;
+    left: calc(50% - 33px);
+    top: 84%;
+    width: 65px;
+    height: 65px;
     line-height: 25px;
   }
 
 .container.top .year {
     left: calc(50% - 39px);
-    top: 65%;
+    top: 76%;
   }
 
 .container.top::after{
@@ -486,7 +486,7 @@ label > p {
 
   .container.top::before{
     left: calc(50% - 25px);
-    top: 85%;
+    top: 95%;
     transform: rotate(90deg);
   }
 
@@ -630,17 +630,32 @@ label > p {
 
 .container .content p {
   margin: 0;
-  font-size: 16px;
-  line-height: 22px;
+  font-size: 14px;
+  line-height: 24px;
   color: #000000;
+  box-sizing: border-box;
+  padding-bottom: 0.5%;
+}
+
+.container .content span {
+  margin: 0;
+  font-size: 12px;
+  line-height: 26px;
+  color: #000000;
+  font-weight: bold;
   box-sizing: border-box;
 }
 
+.container .content span a {
+  font-weight:normal;
+}
+
 #brown-box {
-  width: 240px;
+  width: 25%;;
   border: 1px solid #00000015;
-  text-align: center;
   float: right;
+  margin: 1%;
+  box-sizing: border-box;
 }
 
 #brown-box img {
@@ -649,6 +664,19 @@ label > p {
   box-sizing: border-box;
 }
 
+#brown-box figcaption {
+  padding: 5%;
+  font-size: 11px;
+  font-weight: bold;
+
+}
+
+figcaption .source-link {
+  font-style: italic;
+  vertical-align: super;
+  font-size: 10px;
+  text-decoration: none;
+}
 
 
 @media (max-width: 767.98px) {
