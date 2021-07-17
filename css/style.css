@@ -587,6 +587,10 @@ label > p {
   background-image: url(../images/icons/pong.svg);
 }
 
+#microchip {
+  background-image: url(../images/icons/microchip.svg);
+}
+
 #invader {
   background-image: url(../images/icons/invader.svg)
 }
@@ -672,28 +676,35 @@ label > p {
   padding: 5%;
   font-size: 11px;
   font-weight: bold;
+  text-align: center;
 
 }
 
-#odyssey-box {
+#odyssey-box, #et-box {
   width: 40%;;
   border: 1px solid #00000015;
   float: right;
   margin: 1%;
   box-sizing: border-box;
+  text-align: center;
 }
 
-#odyssey-box img{
+#odyssey-box img, #et-box img{
   width: 100%;
   padding: 5%;
   box-sizing: border-box;
 }
 
-#odyssey-box figcaption {
+#odyssey-box figcaption, #et-box figcaption {
   padding: 5%;
   font-size: 11px;
   font-weight: bold;
 
+}
+
+#et-box {
+  width:30%;
+  max-width:267px;
 }
 
 
