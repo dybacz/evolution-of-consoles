@@ -624,6 +624,14 @@ label > p {
   background-image: url(../images/icons/game-cd.svg)
 }
 
+#ps-icn {
+  background-image: url(../images/icons/ps_icon.svg);
+}
+
+#threed-icn {
+  background-image: url(../images/icons/3d-icon.svg);
+}
+
 #xbx-icn {
   background-image: url(../images/icons//xbx-icon.svg)
 }
