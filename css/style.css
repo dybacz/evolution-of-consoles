@@ -631,6 +631,9 @@ label > p {
 #threed-icn {
   background-image: url(../images/icons/3d-icon.svg);
 }
+#eth-icn {
+  background-image: url(../images/icons/ethernet-icon.svg);
+}
 
 #xbx-icn {
   background-image: url(../images/icons//xbx-icon.svg)
