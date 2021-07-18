@@ -450,19 +450,21 @@ label > p {
   background: inherit;
   width: 50%;
   box-sizing: border-box;
+  
 }
 
 .container.left {
   left: 0;
   box-sizing: border-box;
-  margin-bottom: -90px;
+  margin-bottom: -115px;
 }
 
 .container.right {
   left: 50%;
   box-sizing: border-box;
   padding: 21px 21px 21px 21px;
-  margin-bottom: -90px;
+  margin-bottom: -115px;
+  
 }
 
 .container.top {
@@ -486,6 +488,7 @@ label > p {
     width: 65px;
     height: 65px;
     line-height: 25px;
+    background-size: 50px;
   }
 
 .container.top .year {
@@ -497,7 +500,7 @@ label > p {
     visibility: hidden;
   }
 
-  .container.top::before{
+.container.top::before{
     left: calc(50% - 25px);
     top: 680px;
     transform: rotate(90deg);
@@ -639,6 +642,10 @@ label > p {
   background-image: url(../images/icons//xbx-icon.svg)
 }
 
+#hd-icn {
+  background-image: url(../images/icons/hd-icon.svg)
+}
+
 #headset {
   background-image: url(../images/icons/headset.svg);
 }
@@ -657,6 +664,7 @@ label > p {
   position: relative;
   border: 1px solid #00000013;
   box-sizing: border-box;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .container.right .content {
