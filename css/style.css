@@ -438,6 +438,12 @@ label > p {
   box-sizing: border-box;
 }
 
+.timeline-header {
+  margin-left: 45px;
+  padding-left: 10px;
+  box-sizing: content-box;
+}
+
 .container {
   padding: 21px 21px 21px 21px;
   position: relative;
@@ -459,7 +465,7 @@ label > p {
 
 .container.top {
     box-sizing: border-box;
-    padding: 0 2.5% 1% 2.5%;
+    padding: 0 150px 0 150px;
     width: 100%;
     z-index: 2;
   }
@@ -470,15 +476,15 @@ label > p {
   }
 .container.top .icon {
     left: calc(50% - 33px);
-    top: 84%;
+    top: 600px;
     width: 65px;
     height: 65px;
     line-height: 25px;
   }
 
 .container.top .year {
-    left: calc(50% - 39px);
-    top: 76%;
+    left: calc(50% - 37px);
+    top: 550px;
   }
 
 .container.top::after{
@@ -487,7 +493,7 @@ label > p {
 
   .container.top::before{
     left: calc(50% - 25px);
-    top: 95%;
+    top: 680px;
     transform: rotate(90deg);
   }
 
@@ -612,8 +618,20 @@ label > p {
   background-image: url(../images/icons/game-cd.svg)
 }
 
+#xbx-icn {
+  background-image: url(../images/icons//xbx-icon.svg)
+}
+
+#headset {
+  background-image: url(../images/icons/headset.svg);
+}
+
 #multiplayer {
   background-image: url(../images/icons/online-game.svg);
+}
+
+#fourk-icn {
+  background-image: url(../images/icons/4k-icon.svg);
 }
 
 .container .content {
@@ -625,7 +643,7 @@ label > p {
 }
 
 .container.right .content {
-  padding: 24px 23px 23px 65px;
+  padding: 24px 15px 60px 15px;
   box-sizing: border-box;
 }
 
@@ -639,11 +657,11 @@ label > p {
 
 .container .content p {
   margin: 0;
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 0.85vw;
+  line-height: 2w;
   color: #000000;
   box-sizing: border-box;
-  padding-bottom: 0.5%;
+  padding-bottom: 16px;
 }
 
 .container .content span {
@@ -665,16 +683,17 @@ label > p {
   float: right;
   margin: 1%;
   box-sizing: border-box;
+  max-width: 180px;
 }
 
 #brown-box img {
   width: 100%;
-  padding: 5%;
+  padding: 5px 5px 5px 5px;
   box-sizing: border-box;
 }
 
 #brown-box figcaption {
-  padding: 5%;
+  padding: 5px;
   font-size: 11px;
   font-weight: bold;
   text-align: center;
@@ -688,25 +707,24 @@ label > p {
   margin: 1%;
   box-sizing: border-box;
   text-align: center;
+  max-width: 180px;
 }
 
 #odyssey-box img, #et-box img{
   width: 100%;
-  padding: 5%;
+  padding: 5px 5px 5px 5px;
   box-sizing: border-box;
 }
 
 #odyssey-box figcaption, #et-box figcaption {
-  padding: 5%;
+  padding: 0 5px 5px 5px;
   font-size: 11px;
   font-weight: bold;
 
 }
 
 #et-box {
-  width:30%;
-  max-width: 180px;
-  margin: 0 50px 10px 30px;
+  width:25%;
 }
 
 
