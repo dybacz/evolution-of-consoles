@@ -474,7 +474,7 @@ label > p {
     z-index: 2;
   }
 
-#timeline-bottom {
+.container.bottom {
   margin-bottom: 0;
 }
 
@@ -673,7 +673,7 @@ label > p {
 }
 
 .container .content h2 {
-  margin: 0 0 10px 0;
+  margin: 5px 0 5px 0;
   font-size: 18px;
   font-weight: normal;
   color: #c70202f5;
@@ -979,7 +979,6 @@ figcaption .source-link {
   }
   .container .content h2 {
     font-size: 12px;
-    margin: 5px 0 5px 0;
   }
 
   .container .content span {
