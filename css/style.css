@@ -863,7 +863,7 @@ figcaption .source-link {
     max-width: 90px;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 420px) {
 
   body {
     padding: 0 0 0 0;
@@ -898,8 +898,9 @@ figcaption .source-link {
   }
   .container.left::after, 
   .container.right::after {
-    top: 36px;
+    top: 39px;
     left: 14px;
+    z-index: 2;
   }
 
   .container.top::before{
@@ -910,7 +911,7 @@ figcaption .source-link {
   }
   .container.left::before,
   .container.right::before {
-    top: 43px;
+    top: 46px;
     left: 25px;
     border-color: transparent #c70202f5 transparent transparent;
   }
@@ -953,7 +954,7 @@ figcaption .source-link {
   .container.right .icon {
     right: auto;
     left: 54px;
-    top: 29px;
+    top: 32px;
     height: 30px;
     width: 30px;
     background-size: 25px;
@@ -966,7 +967,7 @@ figcaption .source-link {
 
   .container.left .content,
   .container.right .content {
-    padding: 30px 15px 0px 43px;
+    padding: 10px 10px 0px 43px;
   }
 
   .container .content p {
@@ -980,6 +981,11 @@ figcaption .source-link {
     font-size: 12px;
     margin: 5px 0 5px 0;
   }
+
+  .container .content span {
+    font-size: 10px;
+    line-height: 24px;
+}
 
   #odyssey-box, #et-box {
     max-width: 90px;
