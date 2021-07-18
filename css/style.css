@@ -761,7 +761,7 @@ figcaption .source-link {
 }
 
 
-@media (max-width: 767.98px) {
+@media (max-width: 768px) {
   .timeline::after {
     left: 35px;
   }
@@ -835,6 +835,7 @@ figcaption .source-link {
     left: 10px;
     height: 50px;
     width: 50px;
+    background-size: 40px;
   }
 
   .container.left .icon,
@@ -861,6 +862,139 @@ figcaption .source-link {
   #odyssey-box, #et-box {
     max-width: 90px;
   }
+}
+@media (max-width: 320px) {
+
+  body {
+    padding: 0 0 0 0;
+  }
+
+  .panel {
+    margin: 5px 5px 5px 5px;
+  }
+
+  .timeline::after {
+    left: 22px;
+  }
+
+  .container {
+    width: 100%;
+  }
+  .container.top {
+    padding: 0 0 0 0;
+  }
+
+  .container.right {
+    left: 0%;
+  }
+
+  .container.right, .container.left {
+    margin-bottom: -25px;
+    padding-left: 46px;
+    padding-right: 1px;
+  }
+  .container.top::after {
+    left: 10px;
+  }
+  .container.left::after, 
+  .container.right::after {
+    top: 36px;
+    left: 14px;
+  }
+
+  .container.top::before{
+    left: -359px;
+    top: 433px;
+    width: 762px;
+    height: 2px;
+  }
+  .container.left::before,
+  .container.right::before {
+    top: 43px;
+    left: 25px;
+    border-color: transparent #c70202f5 transparent transparent;
+  }
+
+  .container.top .year {
+    left: 4px;
+    top: 69px;
+    font-size: 10px;
+    font-weight: 700;
+    background-color:#ffffff;
+    padding: 4px;
+    border: solid 1px #c70202f5;
+    border-radius: 5px;
+    z-index: 2;
+}
+
+  .container.left .year,
+  .container.right .year {
+    right: auto;
+    top: 62px;
+    left: 4px;
+    font-size: 10px;
+    font-weight: 700;
+    background-color:#ffffff;
+    padding: 4px;
+    border: solid 1px #c70202f5;
+    border-radius: 5px;
+    z-index: 2;
+  }
+
+  .container.top .icon {
+    top: 31px;
+    left: 5px;
+    height: 36px;
+    width: 36px;
+    background-size: 25px;
+  }
+
+  .container.left .icon,
+  .container.right .icon {
+    right: auto;
+    left: 54px;
+    top: 29px;
+    height: 30px;
+    width: 30px;
+    background-size: 25px;
+  }
+
+  .container.top .content {
+    padding: 10px 10px 30px 45px;
+    box-sizing: border-box;
+}
+
+  .container.left .content,
+  .container.right .content {
+    padding: 30px 15px 0px 43px;
+  }
+
+  .container .content p {
+    font-size: 10px;
+  }
+
+  .container .content h1 {
+    font-size: 20px;
+  }
+  .container .content h2 {
+    font-size: 12px;
+    margin: 5px 0 5px 0;
+  }
+
+  #odyssey-box, #et-box {
+    max-width: 90px;
+  }
+  #brown-box {
+    width: 130px;
+  }
+
+  #brown-box figcaption, #odyssey-box figcaption, #et-box figcaption {
+    padding: 0 2px 2px 2px;
+    font-size: 8px;
+}
+  figcaption .source-link {
+    font-size: 7px;
+}
 }
 
 /********** 5.FOOTER **********/
