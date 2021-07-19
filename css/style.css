@@ -853,21 +853,21 @@ footer{
   }
   .list-inline {
     list-style: none;
-    padding: 0 5px 0 5px;
+    padding: 0 0 0 0;
     text-align: center;
   }
 
   .list-inline > li {
-    padding: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 3px;
     margin-right: -4px;
     margin-left: -4px;
-    width: 45px;
+    width: 34px;
   }
 
   .list-inline > li a {
-    font-weight: 700;
-    font-size: 8px;
-    padding: 6px 0px 6px 0px;
+    font-weight: 600;
+    font-size: 7px;
+    padding: 12px 0px 12px 0px;
   }
   
   .ftleft p, .ftright p {
