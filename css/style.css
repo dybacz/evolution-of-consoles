@@ -524,12 +524,14 @@ footer{
 }
 
 .ftleft i {
+  height: 33px;
   font-size: 25px;
-  padding: 0px 4px 10px 0;
+  padding: 0px 4px 7px 0;
 }
 
-.ftleft a {
+.ftleft a, .ftleft a:link {
   text-decoration: none;
+  color: #bebebe;
 }
 
 .ftleft a:visited, .ftleft a[href^="mailto"], .ftright a:visited{
