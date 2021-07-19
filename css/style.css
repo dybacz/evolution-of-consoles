@@ -155,7 +155,7 @@ header img {
   padding: 4px 5px 6px 10px;
 }
 
-.body-content {
+.main-content {
   grid-row-start: 2;
   grid-row-end: 3;
   width: 100%;
