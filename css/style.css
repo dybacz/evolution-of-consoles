@@ -23,10 +23,10 @@ html{
 
 body {
    
-   background-image: url(../images/controller.svg);
+   background-image: url(../images/other/controller.svg);
    background-attachment: fixed;
    background-repeat: space;
-   padding: 0 140px 0 140px;
+   padding: 0 120px 0 120px;
    min-height: 100%;
    display: grid;
    grid-template-rows: auto 1fr auto ;
@@ -38,7 +38,7 @@ body {
 }
 
     /** HOTFIX FOR FLOATING DIVS **/
-header::after, .panel::after, .panel-top::after, .box section::after{
+header::after, .panel::after, .panel-top::after {
     content: '';
     display: table;
     clear: both;
@@ -102,7 +102,6 @@ nav a:active{
 	background-color: #ffffff;
 	position: sticky;
 	top: 0;
-  margin: 0 29px 0;
   z-index: 3;
   border-right: 2px;
   border-bottom: 2px;
@@ -131,7 +130,7 @@ nav a:active{
 
 .list-inline > li {
 	display: inline-block;
-  padding: 0px 35px 0px 35px;
+  padding: 0px 30px 0px 30px;
   
 }
 
@@ -140,10 +139,9 @@ nav a:active{
 	position: absolute; 
 }
 
-
-
 /********** 3.BODY **********/
-.content {
+
+.body-content {
     grid-row-start: 2;
     grid-row-end: 3;
     width: 100%;
@@ -152,265 +150,14 @@ nav a:active{
 .panel {
     overflow: hidden;
     border-radius: 3px;
-    margin: 0px 29px 29px 29px;
     padding: 29px 0 29px 0;
     background-color: rgb(248, 248, 248);
     border: solid 1px rgb(211, 211, 211);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     grid-row-end: 3;
 }
-.panel-top {
-    background-color: coral;
-}
 
-
-.panel-info > p {
-    background-color: cornflowerblue;
-    padding: 0.5em;
-}
-
-.panel > figure {
-    float: left;
-    width: auto;
-    width: 46%;
-    padding: 0 0 0 0;
-    margin: 2% 2% 0 2%;
-}
-
-.panel > figure > img {
-    background-color: white;
-    border: 1px solid black;
-    width: 100%;
-}
-.panel > figure > figcaption {
-    text-align: center;
-}
-
-.panel-info  {
-    float: left;
-}
-
-.panel-spec {
-    float: left;
-    width: 46%;
-    height: auto;
-    margin: 2% 2% 0 2%;
-}
-
-.panel-spec ul {
-    list-style: none;
-    line-height: 1.5em;
-    font-size: 1em;
-}
-
-.panel-spec ul p{
-    display: inline-block;
-    font-weight: bold;
-}
-
-.panel-spec ul a {
-    text-decoration: none;
-    
-}
-    /* Table */
-.table-spec {
-    float:left;
-    width: 46%;
-    margin: 2% 2% 0 2%;
-  }
-
-.table-spec table {
-    width: 100%;
-    border-collapse: collapse;
-  }
-
-.table-spec table, .table-spec table td, .table-spec table th {
-    border: 1px solid black;
-  }
-
-article > p{
-    background-color: lightgrey;
-    border-bottom: 1px solid black;
-}
-
-label > p {
-    border-bottom: 1px solid black;
-}
-.card {
-    float:left;
-    font-size: 1vw;
-    font-weight: 600;
-    width: 25%;
-    margin-top: 2%;
-}
-
-.img-wrap {
-    width: 12vw;
-    height: 12vw;
-    margin: 1vh 1vw 0 1vw;
-    vertical-align: middle;
-    display: table-cell;
-}
-
-.card img {
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-}
-
-.card figure {
-    width: 75%;
-    text-align: center;
-    background-color: white;
-    margin: 0 auto;
-    border: 1px solid #c4c4c4;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-
-.card figure a {
-    color: black;
-    text-decoration: none;
-}
-
-.box section {
-    background-color: rgba(0, 0, 0, 0.247);
-    border-style: inset;
-    border-color: #dfdfdf;
-    border-radius: 0 0 1em 1em;
-    border-width: 0 2px 2px 2px;
-    padding: 0 2% 2% 2%;
-    margin: 1px 2.1vw 2vh 3.1vw;
-    box-shadow: inset 0 8px 6px -4px rgba(0, 0, 0, 0.15);
-}
-
-.box {
-    margin: 8vh 5vw 0 5vw;
-    border-radius: 1em;
-    
-}
-.header-color {
-    background-image: linear-gradient(to bottom, rgba(255,255,255,0.3) 0%,rgba(230,230,230,0) 8%,rgba(26,26,26,0) 92%, rgba(0,0,0,0.3) 100%);
-}
-
-.header-white {
-    background-image: linear-gradient(to bottom, rgba(0,0,0,0.2) 0%,rgba(230,230,230,0) 8%,rgba(26,26,26,0) 92%,rgba(0,0,0,0.3) 100%);
-}
-
-.atari label img, .commodore label img , .microsoft label img , .nintendo label img,
-.sega label img , .sony label img {
-    max-width: 100%;
-    max-height: 100%;
-    display: inline-block;
-}
-
-
-
-.tab-header {
-    height: 4vh;
-    color: white;
-    padding: 2vh 0 2vh 0;;
-    border-left: 3px solid #00000075;
-    border-right: 2px solid #00000075;
-    border-radius: 0px;
-}
-
-.border-fix {
-    border-radius: 10px;
-    background-color: rgb(219, 219, 219);
-    border-width: 0 1px 0 1px;
-    border-color: #00000025;;
-    border-style: solid;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    margin-bottom: -1px;
-
-}
-
-.white {
-    border-left: 3px solid #ffffff85;
-    border-right: 2px solid #ffffff85;
-}
-
-
-
-.atari, .commodore, .microsoft, .nintendo, .sega, .sony, .other {
-    margin-bottom: 0px;
-
-}
-
-.atari-color {
-    background-color: #FA000F;
-    margin: 0 2vw 0 3vw;
-}
-
-.commodore-color {
-    background-color: white;
-    margin: 0 2vw 0 3vw;
-}
-.microsoft-color {
-    background-color: rgba(0, 0, 0, 0.93);
-    margin: 0 2vw 0 3vw;
-}
-.nintendo-color {
-    background-color: white;
-    margin: 0 2vw 0 3vw;
-}
-.sega-color {
-    background-color: #0060A8;
-    margin: 0 2vw 0 3vw;
-}
-.sony-color {
-    background-color: black;
-    margin: 0 2vw 0 3vw;
-}
-.other-color {
-    background-color: black;
-    color: white;
-    margin: 0 2vw 0 3vw;
-}
-.case-top, .case-center, .case-bottom {
-    height: inherit;
-    float: left;
-}
-.case-top {
-    width: 7.5%;
-}
-
-.case-center {
-    width: 72.5%;
-}
-
-.case-bottom {
-    width: 20%;
-    text-align: center;
-    font-size: 1.5em;
-    margin-top: -1%;
-}
-
-.dark {
-    color: black;
-}
-    /** MECHANISM FOR CASCADING DROPDOWN CONSOLE MENU **/
-
-.at-click, .com-click, .ms-click, .nin-click, .sga-click, .sny-click, .otr-click {
-    display: none;
-}
-
-.atari section, .commodore section, .microsoft section, .nintendo section, .sega section,
-.sony section, .other section {
-    display: none;
-} 
-#atari:focus ~ article {
-    display: block;
-}
-
-.at-click:checked ~ section, .com-click:checked ~ section, .ms-click:checked ~ section,
-.nin-click:checked ~ section, .sga-click:checked ~ section, .sny-click:checked ~ section,
-.otr-click:checked ~ section {
-    display: block;
-} 
 /********** 4.TIMELINE **********/
-
 
 .timeline {
   position: relative;
@@ -696,6 +443,13 @@ label > p {
   font-weight:normal;
 }
 
+figcaption .source-link {
+  font-style: italic;
+  vertical-align: super;
+  font-size: 10px;
+  text-decoration: none;
+}
+
 #brown-box {
   width: 25%;;
   border: 1px solid #00000015;
@@ -747,16 +501,7 @@ label > p {
 }
 
 
-figcaption .source-link {
-  font-style: italic;
-  vertical-align: super;
-  font-size: 10px;
-  text-decoration: none;
-}
-
-
 @media (max-width: 768px) {
-  
   
   body {
     padding: 0 40px 0 40px;
@@ -769,6 +514,7 @@ figcaption .source-link {
   .container {
     width: 100%;
   }
+
   .container.top {
     padding: 0 0 0 0;
   }
@@ -782,11 +528,12 @@ figcaption .source-link {
     padding-left: 73px;
     padding-right: 5px;
   }
+
   .container.top::after {
     left: 10px;
   }
-  .container.left::after, 
-  .container.right::after {
+
+  .container.left::after, .container.right::after {
     top: 75px;
     left: 27px;
   }
@@ -797,8 +544,7 @@ figcaption .source-link {
     width: 624px;
     height: 2px;
   }
-  .container.left::before,
-  .container.right::before {
+  .container.left::before, .container.right::before {
     top: 82px;
     left: 35px;
     border-color: transparent #c70202f5 transparent transparent;
@@ -816,8 +562,7 @@ figcaption .source-link {
     z-index: 2;
 }
 
-  .container.left .year,
-  .container.right .year {
+  .container.left .year, .container.right .year {
     right: auto;
     top: 117px;
     left: 10px;
@@ -838,8 +583,7 @@ figcaption .source-link {
     background-size: 40px;
   }
 
-  .container.left .icon,
-  .container.right .icon {
+  .container.left .icon, .container.right .icon {
     right: auto;
     left: 85px;
     top: 63px;
@@ -848,10 +592,9 @@ figcaption .source-link {
   .container.top .content {
     padding: 20px 30px 30px 69px;
     box-sizing: border-box;
-}
+  }
 
-  .container.left .content,
-  .container.right .content {
+  .container.left .content, .container.right .content {
     padding: 30px 15px 30px 60px;
   }
 
@@ -919,8 +662,8 @@ figcaption .source-link {
     width: 762px;
     height: 2px;
   }
-  .container.left::before,
-  .container.right::before {
+
+  .container.left::before, .container.right::before {
     top: 46px;
     left: 25px;
     border-color: transparent #c70202f5 transparent transparent;
@@ -936,10 +679,9 @@ figcaption .source-link {
     border: solid 1px #c70202f5;
     border-radius: 5px;
     z-index: 2;
-}
+  }
 
-  .container.left .year,
-  .container.right .year {
+  .container.left .year, .container.right .year {
     right: auto;
     top: 62px;
     left: 4px;
@@ -960,8 +702,7 @@ figcaption .source-link {
     background-size: 25px;
   }
 
-  .container.left .icon,
-  .container.right .icon {
+  .container.left .icon, .container.right .icon {
     right: auto;
     left: 54px;
     top: 32px;
@@ -973,10 +714,9 @@ figcaption .source-link {
   .container.top .content {
     padding: 10px 10px 30px 45px;
     box-sizing: border-box;
-}
+  }
 
-  .container.left .content,
-  .container.right .content {
+  .container.left .content, .container.right .content {
     padding: 10px 10px 0px 43px;
   }
 
@@ -987,6 +727,7 @@ figcaption .source-link {
   .container .content h1 {
     font-size: 20px;
   }
+
   .container .content h2 {
     font-size: 12px;
   }
@@ -994,11 +735,12 @@ figcaption .source-link {
   .container .content span {
     font-size: 10px;
     line-height: 24px;
-}
+  }
 
   #odyssey-box, #et-box {
     max-width: 90px;
   }
+
   #brown-box {
     width: 130px;
   }
@@ -1006,31 +748,31 @@ figcaption .source-link {
   #brown-box figcaption, #odyssey-box figcaption, #et-box figcaption {
     padding: 0 2px 2px 2px;
     font-size: 8px;
-}
-  figcaption .source-link {
-    font-size: 7px;
-}
+  }
 
-.sticky-nav {
-  margin: 0 5px;
+    figcaption .source-link {
+      font-size: 7px;
+  }
 
-}
-.list-inline {
-  list-style: none;
-  padding: 5px 5px 7px 5px;
-  text-align: center;
-}
-.list-inline > li {
-  padding: 0px 5px 0px 5px;
-}
+  .sticky-nav {
+    margin: 0 5px;
 
-.list-inline > li a {
-  font-weight: 700;
-  font-size: 8px;
-}
-}
+  }
+  .list-inline {
+    list-style: none;
+    padding: 5px 5px 7px 5px;
+    text-align: center;
+  }
 
-/********** 5.FOOTER **********/
+  .list-inline > li {
+    padding: 0px 2px 0px 2px;
+  }
+
+  .list-inline > li a {
+    font-weight: 700;
+    font-size: 8px;
+  }
+}
 
 footer{
     background-color: var(--main-color);
@@ -1039,96 +781,13 @@ footer{
     grid-row-start: 3;
     grid-row-end: 4;
 }
-
 .ftleft {
     width: 100%;
     text-align: left;
     padding: 1em;
 }
-
 .ftright {
     width: 100%;
     text-align: right;
     padding: 1em;
 }
-
-
-/********** 6.  MEDIA QUERY MOBILE LAYOUT *********/
-
-@media only screen and (max-width: 600px) {
-
-.atari label img, .commodore label img , .microsoft label img , .nintendo label img,
-.sega label img , .sony label img {
-    margin: auto }
-
-.box {
-    margin: 6vh 2vw 0 2vw;
-}
-
-.atari-color, .commodore-color, .microsoft-color, .nintendo-color, .sega-color, .sony-color, .other-color {
-    padding: 1vh 0 1vh 0;
-}
-    .card {
-        width: 50%;
-        font-size: 3vw;
-    }
-    
-    .card figcaption {
-        line-height: 1;
-        display: inline-block;
-        vertical-align: middle;
-    }
-
-    .img-wrap {
-    width: 20vw;
-    height: 16vw;
-    }
-    .card figure {
-        height: 11.5vh; 
-    }
-
-    .border-fix {
-        border-radius: 1vh;
-    }
-
-    .tab-header {
-        height: 3vh;
-        border-left: 2px solid #00000075;
-        border-right: 1px solid #00000075;}
-    }
-/*
-.atari, .commodore, .microsoft, .nintendo, .sega, .sony, .other {
-        border-radius: 0.75em;
-    }
-
-.case-bottom {
-        text-align: center;
-        font-size: 0.75em;
-    }
-
-.tab-header {
-        height: 2.75vh;
-    }
-
-.card figure {
-        font-size: 7pt;
-}
-
-
-
-}
-********* 6.UNUSED CODE ********** 
-
-1. ALTERNATING COLOR
-
-
-.timeline > div:nth-child(2n+1){
-    background-color: white;
-    background-color: rgba(122, 192, 201, 1.0); - transparent background
-
-}
-.timeline > div:nth-child(2n){
-    background-color: grey;
-    background-color:rgba(255,218,185, 1.0); -transparent background;
-}
-*/
