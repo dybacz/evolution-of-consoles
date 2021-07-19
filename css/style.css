@@ -236,7 +236,7 @@ header img {
 
 .container.top .icon {
     left: calc(50% - 33px);
-    top: 509px;
+    top: calc(100% - 90px);
     width: 65px;
     height: 65px;
     line-height: 25px;
@@ -245,7 +245,7 @@ header img {
 
 .container.top .year {
     left: calc(50% - 37px);
-    top: 462px;
+    top: calc(100% - 134px);
 }
 
 .container.top::after{
@@ -254,7 +254,7 @@ header img {
 
 .container.top::before{
     left: calc(50% - 25px);
-    top: 596px;
+    top: calc(100% - 25px);
     transform: rotate(90deg);
 }
 
