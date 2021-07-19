@@ -276,11 +276,6 @@ header img {
   box-sizing: border-box;
 }
 
-.container.right::after {
-  left: -8px;
-  box-sizing: border-box;
-}
-
 .container::before {
   content: '';
   position: absolute;
@@ -290,6 +285,11 @@ header img {
   right: 8px;
   background: #56f799;
   z-index: 1;
+  box-sizing: border-box;
+}
+
+.container.right::after {
+  left: -8px;
   box-sizing: border-box;
 }
 
@@ -358,7 +358,7 @@ header img {
   background-image: url(../images/icons/pong.svg);
 }
 
-#microchip, #microchip2, #microchip3, #microchip4 {
+#microchip, #microchip2, #microchip3 {
   background-image: url(../images/icons/microchip.svg);
 }
 
@@ -401,7 +401,7 @@ header img {
   background-image: url(../images/icons/hd-icon.svg)
 }
 
-#headset, #headset2, #headset3 {
+#headset, #headset2 {
   background-image: url(../images/icons/headset.svg);
 }
 
