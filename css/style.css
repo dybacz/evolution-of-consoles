@@ -118,6 +118,10 @@ header nav a:active{
   color:black;
 }
 
+.list-inline > li a:link {
+  color:black;
+}
+
 .list-inline li a:hover, .list-inline li a:focus {
   color: #FFFFFF;
   background-color:#c70202f5;
