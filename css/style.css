@@ -15,7 +15,7 @@ body {
    background-image: url(../images/other/controller.svg);
    background-attachment: fixed;
    background-repeat: space;
-   padding: 0 120px 0 120px;
+   padding: 0 7.5% 0 7.5%;
    min-height: 100%;
    display: grid;
    grid-template-rows: auto 1fr auto ;
@@ -33,6 +33,7 @@ header {
     border-style: solid;
     border-width: 0 1px 1px 1px;
     border-color: #333333;
+    width: 100%;
     grid-row-start: 1;
     grid-row-end: 2;
 }
@@ -43,7 +44,7 @@ header > p {
   line-height: 80px;
   font-weight: bold;
   padding-left: 8px;
-  font-size: 32px;
+  font-size: 1em;
 }
 
 nav li i {
@@ -103,7 +104,7 @@ header nav a:active{
 }
 
 .list-inline > li a {
-  padding: 10px 23px 10px 23px;
+  padding: 10px 0 10px 0;
   box-sizing: border-box;
   text-decoration: none;
   text-transform: uppercase;
@@ -546,6 +547,18 @@ footer{
     box-sizing: border-box;
 }
 
+
+@media (max-width: 1330px) {
+
+  .list-inline > li {
+    width: calc(100% / 9);
+  }
+
+  .list-inline > li a {
+    padding: 10px 0px 10px 0px;
+  }
+}
+
 @media (max-width: 768px) {
   
   body {
@@ -662,32 +675,35 @@ footer{
 
   .list-inline > li {
     padding: 0px 5px 0px 5px;
-    width: 75px;
   }
 
   .list-inline > li a {
-    font-weight: 600;
+    font-weight: 700;
     font-size: 12px;
     padding: 10px 0px 10px 0px;
   }
 }
-@media (max-width: 567.9px) {
+@media (max-width: 725px) {
 
   body {
     padding: 0 20px 0 20px;
   }
 
   header nav li {
-    width: 216px;
+    width: 50%;
   }
 
   header nav a {
   line-height: 40px;
   }
 
+  header nav ul {
+    width: 100%;
+    text-align: center;
+  }
+
   .list-inline > li {
     padding: 0px 0px 0px 0px;
-    width: 47px;
   }
 
   .list-inline > li a {
@@ -707,7 +723,7 @@ footer{
 
   header > p {
     line-height: 60px;
-    font-size: 18px;
+    font-size: 26px;
   }
 
   header nav a {
@@ -717,12 +733,6 @@ footer{
     border-style: solid;
     border-color: #ffffff15;
   }
-
-  header nav li {
-    width: 210px;
-    font-weight: normal;
-    text-align: center;
-  } 
 
   .panel {
     margin: 0px 5px 5px 5px;
@@ -875,7 +885,6 @@ footer{
     padding: 0px 0px 0px 0px;
     margin-right: -3px;
     margin-left: -2px;
-    width: 45px;
   }
 
   .list-inline > li a {
@@ -898,17 +907,6 @@ footer{
     line-height: 65px;
     font-size: 17px; 
   }
-
-  header nav li {
-    width: 188px;
-  }
-
-  .list-inline > li {
-    padding: 0px 0px 0px 0px;
-    margin-right: -3px;
-    margin-left: -2px;
-    width: 39px;
-  }
 }
 @media (max-width: 375px) {
   
@@ -916,15 +914,4 @@ footer{
     font-size: 14px;
   }
 
-  header nav li {
-      width: 160px;
-  }
-
-  .list-inline > li {
-    width: 32px;
-  }
-
-  .list-inline > li a {
-    font-weight: 450;
-  }
 }
