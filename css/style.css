@@ -52,19 +52,25 @@ header {
 }
 
 header > p {
-    color: white;
-    float: left;
-    line-height: 4em;
-    font-weight: bold;
-    padding-left: 1em;
+  color: white;
+  float: left;
+  line-height: 80px;
+  font-weight: bold;
+  padding-left: 8px;
+  font-size: 32px;
 }
 
-nav ul {
+nav li i {
+  color: white;
+  padding-right: 8px;
+}
+
+header nav ul {
     list-style: none;
     float: right;
 }
 
-nav li {
+header nav li {
     display: inline-flex;
     margin: 0 -2px 0 -2px;
     font-weight: bold;
@@ -73,60 +79,83 @@ nav li {
 
 }
 
-nav a {
+header nav a {
     color: white;
     text-decoration: none;
     display: block;
     width: 100%;
-    padding: 0 1.1em 0 1.1em;
+    padding: 0 20px 0 20px;
+    line-height: 80px;
+    border-left: 1px;
+    border-style: solid;
+    border-color: #bebebe;
 }
 
-nav li:hover{
+header nav li:hover{
     background-color: teal;
 }
 
-nav a:focus {
+header nav a:focus {
     background-color: teal;
 }
 
-nav a:active{
+header nav a:active{
     background-color: thistle;
 }
 
 .sticky-nav {
-	background-color: #ffffff;
+	background-color: transparent;
 	position: sticky;
 	top: 0;
   z-index: 3;
-  border-right: 2px;
-  border-bottom: 2px;
-  border-left: 2px;
-  border-style: solid;
-  border-color: #c70202f5;
 }
 
 .list-inline {
 	list-style: none;
-	padding: 10px;
+	padding: 0px 10px;
   text-align: center;
   
 }
 
 .list-inline > li a {
+  padding: 10px 23px 10px 23px;
+  box-sizing: border-box;
   text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;
   font-size: 18px;
+  display: block;
+  width: 100%;
 }
 
 .list-inline > li a:visited {
   color:black;
 }
 
+.list-inline li a:hover, .list-inline li a:focus {
+  color: #FFFFFF;
+  background-color:#c70202f5;
+}
+
 .list-inline > li {
-	display: inline-block;
-  padding: 0px 30px 0px 30px;
+  display: inline-block;
+  border-bottom: 2px;
+  border-right: 2px;
+  border-top: 2px;
+  border-style: solid;
+  border-color: #c70202f5;
+  margin-right: -4px;
+  margin-left: -1px;
+  box-sizing: border-box;
+  width: 120px;
+  background-color: #ffffff;
   
+}
+
+.first-listitem {
+  border-left: 2px;
+  border-style: solid; 
+  border-color: #c70202f5; 
 }
 
 .list-inline > li:before {
@@ -134,6 +163,12 @@ nav a:active{
 	position: absolute; 
 }
 
+header img {
+  height: 70px;
+  display: block;
+  float: left;
+  padding: 4px 5px 6px 10px;
+}
 /********** 3.BODY **********/
 
 .body-content {
@@ -141,14 +176,15 @@ nav a:active{
     grid-row-end: 3;
     width: 100%;
     height: 100%;
+    background-color: rgb(248, 248, 248);
+    border: solid 1px rgb(211, 211, 211);
+    border-top-width: 0px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 .panel {
     overflow: hidden;
-    border-radius: 3px;
-    padding: 29px 0 29px 0;
-    background-color: rgb(248, 248, 248);
-    border: solid 1px rgb(211, 211, 211);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 0 0 29px 0;
+    
     grid-row-end: 3;
 }
 
@@ -158,7 +194,7 @@ nav a:active{
   position: relative;
   width: 100%;
   max-width: 97%;
-  margin: 0 auto;
+  margin: 10px auto 0 auto;
   box-sizing: border-box;
 }
 
@@ -215,12 +251,12 @@ nav a:active{
 }
 
 .container.top .content {
-    padding: 20px 30px 150px 30px;
+    padding: 20px 30px 120px 30px;
     box-sizing: border-box;
   }
 .container.top .icon {
     left: calc(50% - 33px);
-    top: 600px;
+    top: 509px;
     width: 65px;
     height: 65px;
     line-height: 25px;
@@ -229,7 +265,7 @@ nav a:active{
 
 .container.top .year {
     left: calc(50% - 37px);
-    top: 550px;
+    top: 462px;
   }
 
 .container.top::after{
@@ -238,7 +274,7 @@ nav a:active{
 
 .container.top::before{
     left: calc(50% - 25px);
-    top: 680px;
+    top: 596px;
     transform: rotate(90deg);
   }
 
@@ -444,12 +480,12 @@ figcaption .source-link {
 }
 
 #brown-box {
-  width: 25%;;
+  width: 25%;
   border: 1px solid #00000015;
   float: right;
   margin: 1%;
   box-sizing: border-box;
-  max-width: 180px;
+  max-width: 240px;
 }
 
 #brown-box img {
@@ -769,18 +805,39 @@ figcaption .source-link {
 
 footer{
     background-color: #3B3B3B;
-    color: white;
+    height: 77px;
     display: inline-flex;
     grid-row-start: 3;
     grid-row-end: 4;
 }
 .ftleft {
+    color: #bebebe;
     width: 100%;
     text-align: left;
     padding: 1em;
+    box-sizing: border-box;
+}
+
+.ftleft i {
+  font-size: 25px;
+  padding: 0px 4px 10px 0;
+}
+
+.ftleft a {
+  text-decoration: none;
+}
+
+.ftleft a:visited, .ftleft a[href^="mailto"], .ftright a:visited{
+  color: inherit;
+}
+
+.ftleft p,.ftright p {
+  font-size: 12px;
 }
 .ftright {
+    color: #bebebe;
     width: 100%;
     text-align: right;
     padding: 1em;
+    box-sizing: border-box;
 }
