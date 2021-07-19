@@ -340,7 +340,7 @@ nav a:active{
   background-image: url(../images/icons/light-bulb.svg)
 }
 
-#pong {
+#pong, #pong2 {
   background-image: url(../images/icons/pong.svg);
 }
 
@@ -473,7 +473,7 @@ figcaption .source-link {
 
 }
 
-#odyssey-box, #et-box {
+.img-box, #et-box {
   width: 40%;;
   border: 1px solid #00000015;
   float: right;
@@ -483,13 +483,13 @@ figcaption .source-link {
   max-width: 180px;
 }
 
-#odyssey-box img, #et-box img{
+.img-box img, #et-box img{
   width: 100%;
   padding: 5px 5px 5px 5px;
   box-sizing: border-box;
 }
 
-#odyssey-box figcaption, #et-box figcaption {
+.img-box figcaption, #et-box figcaption {
   padding: 0 5px 5px 5px;
   font-size: 11px;
   font-weight: bold;
@@ -602,7 +602,7 @@ figcaption .source-link {
     font-size: 12px;
   }
 
-  #odyssey-box, #et-box {
+  .img-box, #et-box {
     max-width: 90px;
   }
 
@@ -737,7 +737,7 @@ figcaption .source-link {
     line-height: 24px;
   }
 
-  #odyssey-box, #et-box {
+  .img-box, #et-box {
     max-width: 90px;
   }
 
@@ -745,7 +745,7 @@ figcaption .source-link {
     width: 130px;
   }
 
-  #brown-box figcaption, #odyssey-box figcaption, #et-box figcaption {
+  #brown-box figcaption, .img-box figcaption, #et-box figcaption {
     padding: 0 2px 2px 2px;
     font-size: 8px;
   }
