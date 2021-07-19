@@ -650,9 +650,35 @@ figcaption .source-link {
     padding: 0 0 0 0;
   }
 
+  header img {
+    height: 50px;
+  }
+
+  header > p {
+    line-height: 60px;
+    font-size: 18px;
+  }
+
+  header nav a {
+    line-height: 40px;
+    border-top: 1px;
+    border-right: 1px;
+    border-style: solid;
+    border-color: #ffffff15;
+  }
+
+  header nav li {
+    width: 210px;
+    font-weight: normal;
+  } 
+
   .panel {
     margin: 0px 5px 5px 5px;
     padding: 5px 0 29px 0;
+  }
+
+  .timeline {
+    margin: 0 auto 0 auto;
   }
 
   .timeline::after {
@@ -789,18 +815,27 @@ figcaption .source-link {
   }
   .list-inline {
     list-style: none;
-    padding: 5px 5px 7px 5px;
+    padding: 0 5px 0 5px;
     text-align: center;
   }
 
   .list-inline > li {
-    padding: 0px 2px 0px 2px;
+    padding: 0px 0px 0px 0px;
+    margin-right: -4px;
+    margin-left: -4px;
+    width: 45px;
   }
 
   .list-inline > li a {
     font-weight: 700;
     font-size: 8px;
+    padding: 6px 0px 6px 0px;
   }
+  
+  .ftleft p, .ftright p {
+    font-size: 8px;
+}
+
 }
 
 footer{
