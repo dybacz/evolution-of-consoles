@@ -344,7 +344,7 @@ nav a:active{
   background-image: url(../images/icons/pong.svg);
 }
 
-#microchip {
+#microchip, #microchip2, #microchip3 {
   background-image: url(../images/icons/microchip.svg);
 }
 
@@ -356,7 +356,7 @@ nav a:active{
   background-image: url(../images/icons/novoselmushroom.svg)
 }
 
-#joystick {
+#joystick, #joystick2, #joystick3 {
   background-image: url(../images/icons/joystick.svg);
 }
 
@@ -364,7 +364,7 @@ nav a:active{
   background-image: url(../images/icons/sonic.svg)
 }
 
-#cd-rom {
+#cd-rom, #cd-rom2 {
   background-image: url(../images/icons/game-cd.svg)
 }
 
@@ -379,7 +379,7 @@ nav a:active{
   background-image: url(../images/icons/ethernet-icon.svg);
 }
 
-#xbx-icn {
+#xbx-icn, #xbx-icn2 {
   background-image: url(../images/icons//xbx-icon.svg)
 }
 
@@ -387,11 +387,11 @@ nav a:active{
   background-image: url(../images/icons/hd-icon.svg)
 }
 
-#headset {
+#headset, #headset2, #headset3 {
   background-image: url(../images/icons/headset.svg);
 }
 
-#multiplayer {
+#multiplayer, #multiplayer2 {
   background-image: url(../images/icons/online-game.svg);
 }
 
