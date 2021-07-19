@@ -234,7 +234,7 @@ header img {
 }
 
 .container.top .content {
-    padding: 20px 30px 120px 30px;
+    padding: 20px 30px 130px 30px;
     box-sizing: border-box;
 }
 
@@ -445,7 +445,7 @@ header img {
   font-size: 0.85vw;
   color: #000000;
   box-sizing: border-box;
-  padding-bottom: 16px;
+  padding-bottom: 10px;
 }
 
 .container .content span {
@@ -573,7 +573,6 @@ footer{
     padding: 10px 0px 10px 0px;
   }
 }
-
 @media (max-width: 768px) {
   
   body {
@@ -926,7 +925,12 @@ footer{
 @media (max-width: 375px) {
   
   header > p {
-    font-size: 14px;
+    font-size: 12px;
+  }
+  
+  .list-inline > li a {
+    font-size: 6.5px;
+    font-weight: 500;
   }
 
 }
