@@ -574,6 +574,15 @@ footer{
     padding: 0 40px 0 40px;
   }
 
+  header > p {
+    line-height: 75px;
+    font-size: 20px;
+  }
+  header img {
+    height: 60px;
+    padding: 10px 5px 10px 10px;
+  }
+
   .timeline::after {
     left: 35px;
   }
@@ -675,14 +684,16 @@ footer{
 
   .list-inline > li {
     padding: 0px 5px 0px 5px;
+    width: 75px;
   }
 
   .list-inline > li a {
     font-weight: 600;
     font-size: 12px;
+    padding: 10px 0px 10px 0px;
   }
 }
-@media (max-width: 420px) {
+@media (max-width: 425px) {
 
   body {
     padding: 0 0 0 0;
@@ -853,25 +864,66 @@ footer{
   }
   .list-inline {
     list-style: none;
-    padding: 0 0 0 0;
+    padding: 0 5px 0 5px;
     text-align: center;
   }
 
   .list-inline > li {
-    padding: 0px 0px 0px 3px;
-    margin-right: -4px;
-    margin-left: -4px;
-    width: 34px;
+    padding: 0px 0px 0px 0px;
+    margin-right: -3px;
+    margin-left: -2px;
+    width: 45px;
   }
 
   .list-inline > li a {
-    font-weight: 600;
-    font-size: 7px;
-    padding: 12px 0px 12px 0px;
+    font-weight: 700;
+    font-size: 8px;
+    padding: 10px 0px 10px 0px;
   }
   
   .ftleft p, .ftright p {
     font-size: 8px;
 }
+}
 
+@media (max-width: 375px) {
+
+  header img {
+    height: 45px;
+  }
+
+  header > p {
+    line-height: 65px;
+    font-size: 17px; 
+  }
+
+  header nav li {
+    width: 188px;
+  }
+
+  .list-inline > li {
+    padding: 0px 0px 0px 0px;
+    margin-right: -3px;
+    margin-left: -1px;
+    width: 39px;
+  }
+}
+
+@media (max-width: 320px) {
+  
+  header > p {
+    font-size: 14px;
+  }
+
+  header nav li {
+      width: 160px;
+  }
+
+  .list-inline > li {
+    width: 32px;
+  }
+  
+  .list-inline > li a {
+    font-weight: 450;
+  }
 }
