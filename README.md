@@ -1,72 +1,43 @@
 # The Evolution of Games Consoles
 
-This site has is meant for all audiences, yound and old. It was developed to give a overview and breakdown of the Evolution of the Homes video console through the use of any informative timeline.
+This site hopes to educate people on the history of the home video games console. This is done through an informative and detailed timeline which allows the user to effortlessly scroll through the history. 
 
-This site splits up the consoles and compares them from one generation to the next.
+This site has been designed with simple functionality for use with all audiences. This site splits up the consoles and compares them from one generation to the next. The site is dynamic and therefore accessible from any sized smart device with an internet connection.
 
-I wish to accomplish an informative website that uses will keep coming back to 
+The Evolution of Games consoles will be useful for anyone who is interested in the Home video games console market, it's history, development, innovations and failures allow for an an informative and educated read. Or for anyone who wants to experience and nostalgic trip back through the years.
 
-In this section, you will include one or two paragraphs providing an overview of your project. Essentially, this part is your sales pitch. At this stage, you should have a name for your project so use it! Don’t introduce the project as a Portfolio project for the diploma. In this section, describe what the project hopes to accomplish, who it is intended to target and how it will be useful to the target audience. 
-
-For example; Love Running is a site that hopes to help keep people motivated to meet up for runs on a regular basis in Dublin, Ireland. The site will be targeted toward runners who are looking for a way to socialise and keep themselves fit. Love Running will be useful for runners to see exactly when and where they should be to join the running club. 
-
-![Responsice Mockup](https://github.com/lucyrush/readme-template/blob/master/media/love_running_mockup.png)
-
-
+![AmIResponsive Mockup](./images/screenshots/amiresponsive.png)
 
 ### Existing Features
 
 - __Navigation Bar__
 
-  - Featured on all three pages, the full responsive navigation bar includes links to the Logo, Home page, Gallery and Sign Up page and is identical in each page to allow for easy navigation.
-  - This section will allow the user to easily navigate from page to page across all devices without having to revert back to the previous page via the ‘back’ button. 
+  - Featured on two pages, the full responsive navigation bar includes links to the Home page and about page and is identical in each page to allow for easy navigation.
+  - This section will allow the user to easily navigate from page to page across all devices without having to revert to the previous page via the ‘back’ button. 
 
-![Nav Bar](https://github.com/lucyrush/readme-template/blob/master/media/love_running_nav.png)
+![Nav Bar](./images/screenshots/navbar.png)
 
-- __The landing page image__
+- __The Timeline__
 
-  - The landing includes a photograph with text overlay to allow the user to see exactly which location this site would be applicable to. 
-  - This section introduces the user to Love Running with an eye catching animation to grab their attention
+  - The Timeline is vertical allowing the user to scroll down for more content. Each entry on the timeline forks off into its own container featuring Text and Images.
 
-![Landing Page](https://github.com/lucyrush/readme-template/blob/master/media/love_running_landing.png)
+![Timeline](./images/screenshots/timeline.png)
 
-- __Club Ethos Section__
+- __Sticky Timeline Navbar__
 
-  - The club ethos section will allow the user to see the benefits of joining the Love Running meetups, as well as the benefits of running overall. 
-  - This user will see the value of signing up for the Love Running meetups. This should encourage the user to consider running as their form of exercise. 
+  - The Sticky Timeline allows the user to navigate the Timline effectively without overscrolling to get to a require place e.g Top of page. The Sticky Navbar focuses on indidivual containers at the start of each new console generation. 
+  - After scrolling beyond the sticky timelines initial starting position, the Timline continues to sit at the top of the browser allowing the user ease of access to quick navvigation 
 
-![Club Ethos](https://github.com/lucyrush/readme-template/blob/master/media/love_running_ethos.png)
-
-- __Meetup Times section__
-
-  - This section will allow the user to see exactly when the meetups will happen, where they will be located and how long the run will be in kilometers. 
-  - This section will be updated as these times change to keep the user up to date. 
-
-![Meetup Times](https://github.com/lucyrush/readme-template/blob/master/media/love_running_times.png)
+![Sticky Navbar](./images/screenshots/stickynavbar.png)
 
 - __The Footer__ 
 
-  - The footer section includes links to the relevant social media sites for Love Running. The links will open to a new tab to allow easy navigation for the user. 
+  - The footer section includes links to the relevant social media sites of the creator. The links will open to a new tab to allow easy navigation for the user. 
   - The footer is valuable to the user as it encourages them to keep connected via social media
 
-![Footer](https://github.com/lucyrush/readme-template/blob/master/media/love_running_footer.png)
+![Footer](./images/screenshots/footer.png)
 
-- __Gallery__
 
-  - The gallery will provide the user with supporting images to see what the meet ups look like. 
-  - This section is valuable to the user as they will be able to easily identify the types of events the organisation puts together. 
-
-![Gallery](https://github.com/lucyrush/readme-template/blob/master/media/love_running_gallery.png)
-
-- __The Sign Up Page__
-
-  - This page will allow the user to get signed up to Love Running to start their running journey with the community. The user will be able specify if they would like to take part in road, trail or both types of running. The user will be asked to submit their full name and email address. 
-
-![Sign Up](https://github.com/lucyrush/readme-template/blob/master/media/love_running_signup.png)
-
-For some/all of your features, you may choose to reference the specific project files that implement them.
-
-In addition, you may also use this section to discuss plans for additional features to be implemented in the future:
 
 ### Features Left to Implement
 
@@ -77,13 +48,14 @@ In addition, you may also use this section to discuss plans for additional featu
   - All references for any text, images and media used. 
   - Small bio about the creator of this site.
 
-- Console Library: A library containing all Video games consoles ever released. This library would allow users to quickly find and select a console they wish to find more information on. Once clicked the user will be taken to an a unique page for that console full of further information, images, videos and more about that console. The user will be easily able to navigate back and continue to browse the rest of the console selection in the library. The consoles will be seperated based on Manufacturer but will all contain hyperlinks allowing for navigation between them.
+- Console Library: A library containing all Video games consoles ever released. This library would allow users to quickly find and select a console they wish to find more information on. Once clicked the user will be taken to a unique page for that console full of further information, images, videos and more about that console. The user will be easily able to navigate back and continue to browse the rest of the console selection in the library. The consoles will be seperated based on Manufacturer, but will all contain hyperlinks allowing for navigation between them.
 
 - Hand-held consoles: Would like to expand upon the original site and integrate the history of Hand-held consoled.
 - Peripherals: The evolution of the controllers and many peripherals.
-- DRM & Storage medium: Similar to the two previous, this subject has a lot of interesting information that tied into and played a key role in the development of the Home Video Games Console 
+- DRM & Storage medium: Like the two previous, this subject has a lot of interesting information that tied into and played a key role in the development of the Home Video Games Console 
+- Redesign sticky navbar to be accomodated better on smaller devices. 
 
--Redesign sticky navbar to be accomodated better on smaller devices. 
+
 
 ## Testing 
 
@@ -101,17 +73,17 @@ This project uses six media queries to allow for a dynamic website designed to f
   - 376px - 420px - Medium phone Layout - With decresing font size and weight of sticky navbar
   - Below 376px - Small Phone Layout - Sticky navbar reduced to smallest possible size.
 
-
 ### Validator Testing 
 
 - HTML
-  - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcode-institute-org.github.io%2Flove-running-2.0%2Findex.html)
+  - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fdybacz.github.io%2Fevolution-of-consoles%2F)
+
 - CSS
-  - No errors were found when passing through the official [(Jigsaw) CSS validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fvalidator.w3.org%2Fnu%2F%3Fdoc%3Dhttps%253A%252F%252Fcode-institute-org.github.io%252Flove-running-2.0%252Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en#css)
+  - No errors were found when passing through the official [(Jigsaw) CSS validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fdybacz.github.io%2Fevolution-of-consoles%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 
 ### Unfixed Bugs
 
-- None noticed.
+- None as of yet.
 
 ### Deployment
 
@@ -119,6 +91,8 @@ This project uses six media queries to allow for a dynamic website designed to f
   - In the GitHub repository, navigate to the Settings tab 
   - From the source section drop-down menu, select the Master Branch
   - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment. 
+
+
 
 ## Credits 
 
@@ -141,12 +115,9 @@ This project uses six media queries to allow for a dynamic website designed to f
   - [History](https://www.history.com/topics/inventions/history-of-video-games)
   - [BBC](https://www.bbc.co.uk/archive/the-8-generations-of-video-game-consoles/zvcjkty)
 
-
 - The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
 - The icons used in the timeline were available for free at [SVGrepo](https://www.svgrepo.com/)
 
 ### Media
 
 - The images used on the timeline were taken from the consoles respective wikipedia site. All images were available for free download and personnel use.
-
-
