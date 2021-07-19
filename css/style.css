@@ -529,6 +529,44 @@ figcaption .source-link {
   width:25%;
 }
 
+footer{
+    background-color: #3B3B3B;
+    height: 77px;
+    display: inline-flex;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+.ftleft {
+    color: #bebebe;
+    width: 100%;
+    text-align: left;
+    padding: 1em;
+    box-sizing: border-box;
+}
+
+.ftleft i {
+  font-size: 25px;
+  padding: 0px 4px 10px 0;
+}
+
+.ftleft a {
+  text-decoration: none;
+}
+
+.ftleft a:visited, .ftleft a[href^="mailto"], .ftright a:visited{
+  color: inherit;
+}
+
+.ftleft p,.ftright p {
+  font-size: 12px;
+}
+.ftright {
+    color: #bebebe;
+    width: 100%;
+    text-align: right;
+    padding: 1em;
+    box-sizing: border-box;
+}
 
 @media (max-width: 768px) {
   
@@ -836,43 +874,4 @@ figcaption .source-link {
     font-size: 8px;
 }
 
-}
-
-footer{
-    background-color: #3B3B3B;
-    height: 77px;
-    display: inline-flex;
-    grid-row-start: 3;
-    grid-row-end: 4;
-}
-.ftleft {
-    color: #bebebe;
-    width: 100%;
-    text-align: left;
-    padding: 1em;
-    box-sizing: border-box;
-}
-
-.ftleft i {
-  font-size: 25px;
-  padding: 0px 4px 10px 0;
-}
-
-.ftleft a {
-  text-decoration: none;
-}
-
-.ftleft a:visited, .ftleft a[href^="mailto"], .ftright a:visited{
-  color: inherit;
-}
-
-.ftleft p,.ftright p {
-  font-size: 12px;
-}
-.ftright {
-    color: #bebebe;
-    width: 100%;
-    text-align: right;
-    padding: 1em;
-    box-sizing: border-box;
 }
