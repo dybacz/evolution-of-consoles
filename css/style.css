@@ -529,8 +529,12 @@ footer{
   padding: 0px 4px 7px 0;
 }
 
-.ftleft a, .ftleft a:link {
+.ftleft a {
   text-decoration: none;
+  color: #bebebe;
+}
+
+.ftleft a:link {
   color: #bebebe;
 }
 
