@@ -115,16 +115,16 @@ header nav a:active{
 }
 
 .list-inline > li a:visited {
-  color:#655092;
+  color:#FFFFFF;
 }
 
 .list-inline > li a:link {
-  color:#655092;
+  color:#FFFFFF;
 }
 
 .list-inline li a:hover, .list-inline li a:focus {
-  color: #FFFFFF;
-  background-color:rgb(101, 80, 146);
+  color: rgb(101, 80, 146);
+  background-color: #FFFFFF;
 }
 
 .list-inline > li {
@@ -133,12 +133,12 @@ header nav a:active{
   border-right: 2px;
   border-top: 2px;
   border-style: solid;
-  border-color: rgb(101, 80, 146);
+  border-color: #FFFFFF;
   margin-right: -4px;
   margin-left: -1px;
   box-sizing: border-box;
   width: 120px;
-  background-color: #ffffff;
+  background-color: rgb(101, 80, 146);
 }
 
 .first-listitem {
